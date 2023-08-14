@@ -1,0 +1,24 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Funcionario {
+    -nome: String
+    -cpf: String
+    #dataDeNascimento: Data
+    ~salario: Double
+    +Funcionario(nome: String, cpf: String, nascimento: Data)
+    +toString(): String
+
+}
+
+class Gerente {
+    -senha: String
+    +Gerente(nome: String, cpf: String, nascimento: Data, senha: String)
+    +autentica(senha: String): Boolean
+    +toString(): String
+}
+
+Funcionario <|-- Gerente
+
+@enduml
+

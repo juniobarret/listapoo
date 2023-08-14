@@ -1,0 +1,49 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Endereco {
+    -logradouro: String
+    -numero: String
+    -complemento: String
+    -bairro: String
+    -cep: String
+    -cidade: String
+    -estado: String
+    -pais: String
+}
+
+class Cargo {
+    -nome: String
+    -acrescimoNoSalario: double
+}
+
+class Funcionario {
+    -matricula: int
+    -none: String
+    -dataDeNascimento: Data
+    -endereco: Endereco
+    -telefoneContato: String
+    -salario: double
+    -cargo: Cargo
+    -dataAdmissao: Data
+    +obterIdade(): int
+    +reajustarSalario(porcentagem: double): void
+    +promover(novoCargo: Cargo): void
+}
+
+class Cliente {
+    -codigo: int
+    -nome: String
+    -dataDeNascimento: Data
+    -endereco: Endereco
+    -telefoneContato: String    
+    +obterIdade(): int
+}
+
+Funcionario --> Cargo: possui
+Endereco <- Funcionario: possui
+
+Cliente -> Endereco: possui
+
+@enduml
+
