@@ -4,6 +4,8 @@ public class DataHoraHeranca extends Data {
     private int hora;
     private int minuto;
 
+    
+
     public DataHoraHeranca(int dia, int mes, int ano, int hora, int minuto) {
         super(dia, mes, ano);
         this.hora = hora;
