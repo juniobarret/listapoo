@@ -31,4 +31,11 @@ public class Data {
     public void setAno(int ano) {
         this.ano = ano;
     }
+
+    public boolean ehIgual(Data outraData) {
+        return this.dia == outraData.getDia() &&
+               this.mes == outraData.getMes() &&
+               this.ano == outraData.getAno();
+    }
+    
 }
