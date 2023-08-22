@@ -1,4 +1,4 @@
-package questao01;
+package questao01e02;
 
 public class Hora {
     private int hora;
@@ -12,15 +12,21 @@ public class Hora {
     public int getHora() {
         return hora;
     }
-    
+
     public void setHora(int hora) {
         this.hora = hora;
-
     }
+
     public int getMinuto() {
         return minuto;
     }
+
     public void setMinuto(int minuto) {
         this.minuto = minuto;
+    }
+
+    @Override
+    public String toString() {
+        return hora + ":" + minuto;
     }
 }

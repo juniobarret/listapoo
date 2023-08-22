@@ -1,0 +1,15 @@
+@startuml
+class Ingresso {
+    - valor: double
+    + Ingresso(valor: double)
+    + getValorFinal(): double
+}
+
+class IngressoVIP {
+    - valorAdicional: double
+    + IngressoVIP(valor: double, valorAdicional: double)
+    + getValorFinal(): double
+}
+
+Ingresso <|-- IngressoVIP
+@enduml
