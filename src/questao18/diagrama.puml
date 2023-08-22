@@ -1,0 +1,30 @@
+@startuml
+
+class Pessoa {
+    - nome: String
+    - idade: int
+    + Pessoa(nome: String, idade: int)
+    + getNome(): String
+    + getIdade(): int
+}
+
+class Aluno {
+    - matricula: int
+    - curso: String
+    + Aluno(nome: String, idade: int, matricula: int, curso: String)
+    + getMatricula(): int
+    + getCurso(): String
+}
+
+class Professor {
+    - salario: double
+    - disciplina: String
+    + Professor(nome: String, idade: int, salario: double, disciplina: String)
+    + getSalario(): double
+    + getDisciplina(): String
+}
+
+Pessoa <|-- Aluno
+Pessoa <|-- Professor
+
+@enduml

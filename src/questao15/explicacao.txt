@@ -1,0 +1,5 @@
+Olhando o diagrama, na classe "Gerente", a "senha" pode ser mudada porque é privada e
+ exclusiva dela. Já os campos "nome" e "cpf" na classe "Funcionario" são privados, o que
+  significa que o "Gerente" não pode mexer neles. O "dataDeNascimento" é protegido, dá para 
+  acessar, mas não dá para mexer. O "salario" é meio privado por padrão, então mesmo se fosse
+   do mesmo grupo do "Gerente", não daria para mudar porque é da família "Funcionario".

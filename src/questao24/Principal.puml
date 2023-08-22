@@ -1,0 +1,26 @@
+class Personagem {
+    - nome: String
+    - nivel: int
+    - defesa: int
+    - agilidade: int
+    - inteligencia: int
+    - x: int
+    - y: int
+    + mover(dx: int, dy: int): void
+    + atacar(alvo: Personagem): void
+    + defender(dano: int): void
+}
+
+class Jogador {
+    - mana: int
+    - forca: int
+    + escolherPapel(papel: String): void
+}
+
+class Monstro {
+    - tipo: String
+    + definirTipo(tipo: String): void
+}
+
+Personagem <|-- Jogador
+Personagem <|-- Monstro
